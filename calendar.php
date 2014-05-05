@@ -32,6 +32,24 @@ and open the template in the editor.
         }
         echo '</select>';
         
+                // Make the days pull-down menu:
+        echo '<select name="day">';
+        foreach ($days as $key =>
+                $value) {
+            echo "<option value=\"$key\">
+                $value</option>\n";
+        }
+        echo '</select>';
+        
+                // Make the months pull-down menu:
+        echo '<select name="year">';
+        foreach ($years as $key =>
+                $value) {
+            echo "<option value=\"$key\">
+                $value</option>\n";
+        }
+        echo '</select>';
+        
         ?>
         </form>
     </body>
